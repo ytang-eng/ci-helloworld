@@ -35,4 +35,13 @@ public class ArrayUtils {
         }
         return count;
     }
+
+    // adding method
+    public static int countOf(int[] x, int target) {
+        int count = 0;
+        for (int a: x) {
+            count = a == target ? count + 1 : count;
+        }
+        return count;
+    }
 }
